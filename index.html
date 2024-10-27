@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detector de Muérdago</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="index.js"></script>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Detector de Muérdago</h1>
+      <div id="upload-zone" class="upload-zone">
+        <p>Haz clic para subir o arrastra y suelta</p>
+        <p class="text-sm">PNG, JPG, GIF hasta 10MB</p>
+        <img
+          id="previewImage"
+          src=""
+          alt="Imagen cargada"
+          style="display: none"
+        />
+      </div>
+      <input
+        type="file"
+        id="imageInput"
+        accept="image/*"
+        style="display: none"
+      />
+
+      <button id="uploadButton" class="button">Analizar Imagen</button>
+
+      <div id="statusMessage" class="status" style="display: none"></div>
+    </div>
+  </body>
+</html>

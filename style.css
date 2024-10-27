@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e6f9e6; /* Fondo verde suave */
+}
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.upload-zone {
+  border: 2px dashed #4ade80; /* Verde más intenso para el borde */
+  border-radius: 8px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: #f1fdf0; /* Fondo verde muy claro */
+}
+.upload-zone img {
+  max-height: 200px;
+  width: auto;
+  margin: 0 auto;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #34d399; /* Verde para el botón */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+.status {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+}
+.status-success {
+  background-color: #d1fae5; /* Verde suave */
+  color: #065f46; /* Color oscuro para el texto */
+  border: 2px solid #34d399; /* Bordes para mayor visibilidad */
+}
+.status-fail {
+  background-color: #fee2e2; /* Rojo suave */
+  color: #b91c1c; /* Color oscuro para el texto */
+  border: 2px solid #b91c1c; /* Bordes para mayor visibilidad */
+}
+.loading-spinner {
+  border: 4px solid #f3f4f6;
+  border-top: 4px solid #34d399; /* Color verde para el spinner */
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin-right: 8px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.button:disabled {
+  background-color: #9ca3af; /* Color de fondo más gris para indicar deshabilitado */
+  cursor: not-allowed; /* Cambia el cursor para mostrar que no se puede hacer clic */
+  opacity: 0.6; /* Disminuye la opacidad */
+}
+
+.button:hover {
+  background-color: #28b88c; /* Un tono más oscuro para el hover */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa para un efecto de elevación */
+}
