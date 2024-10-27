@@ -35,4 +35,4 @@ To get a local copy of this project up and running, follow these steps:
 
 2. Navigate to the project directory and open the `index.html` file in your web browser. **Note**: To run it locally, you need to execute it on a server. You can use the **Live Server** extension in VSCode, **Live Preview**, or open it manually in a server environment.
 
-3. The application is also deployed and accessible at <a href="https://angelaldaz.github.io/Mistletoe-Detection/" target="_blank">https://angelaldaz.github.io/Mistletoe-Detection/</a>.
+3. The application is also deployed and accessible at [https://angelaldaz.github.io/Mistletoe-Detection/](https://angelaldaz.github.io/Mistletoe-Detection/).
